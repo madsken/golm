@@ -34,4 +34,4 @@ APIs, naming conventions, and package structures are subject to change at any ti
 
 ---
 
-> *Built with by someone trying his best.*
+> *Built by someone trying his best.*
