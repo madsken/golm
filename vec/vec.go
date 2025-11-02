@@ -31,5 +31,5 @@ func (v Vec3) Scale(i float64) Vec3 {
 }
 
 func (v Vec3) Dot(i Vec3) float64 {
-	return v.X*i.X + v.Y*i.Y + v.Z*v.Z
+	return v.X*i.X + v.Y*i.Y + v.Z*i.Z
 }
