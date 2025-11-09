@@ -26,11 +26,8 @@ APIs, naming conventions, and package structures are subject to change at any ti
 
 ## 🗺️ Roadmap
 
-1. Implement all vector types (`vec2`, `vec3`, `vec4`)
-2. Add matrix support (`mat2`, `mat3`, `mat4`)
-3. Implement quaternions (`quat`)
-4. Add math utilities (projection, rotation, transformation)
-5. Benchmark and optimize
+1. Add math utilities (projection, rotation, transformation)
+2. Add examples
 
 ---
 
