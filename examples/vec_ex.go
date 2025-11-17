@@ -6,17 +6,8 @@ import (
 )
 
 func vec3Examples() {
-	v1 := golm.Vec3{
-		X: 1,
-		Y: 2,
-		Z: 3,
-	}
-
-	v2 := golm.Vec3{
-		X: 4,
-		Y: 5,
-		Z: 6,
-	}
+	v1 := golm.NewVec3(1, 2, 3)
+	v2 := golm.NewVec3(4, 5, 6)
 
 	fmt.Println("v1")
 	fmt.Println(v1)
