@@ -1,11 +1,22 @@
 package vec
 
-import "math"
+import (
+	"github.com/madsken/golm/internal/constraints"
+	"math"
+)
 
 type Vec3 struct {
 	X float64
 	Y float64
 	Z float64
+}
+
+func NewVec3[T constraints.FloatConvertible](x, y, z T) Vec3 {
+	return Vec3{
+		X: float64(x),
+		Y: float64(y),
+		Z: float64(z),
+	}
 }
 
 func (v1 Vec3) Add(v2 Vec3) Vec3 {

@@ -1,9 +1,21 @@
 package quat
 
-import "math"
+import (
+	"github.com/madsken/golm/internal/constraints"
+	"math"
+)
 
 type Quat struct {
 	W, X, Y, Z float64
+}
+
+func NewQuat[T constraints.FloatConvertible](w, x, y, z T) Quat {
+	return Quat{
+		W: float64(w),
+		X: float64(x),
+		Y: float64(y),
+		Z: float64(z),
+	}
 }
 
 func (q1 Quat) Add(q2 Quat) Quat {
